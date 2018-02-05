@@ -26,4 +26,34 @@ let endswithc = (<string>message).endsWith('c');
 let endswithc = (message as string).endsWith('c');
 
 // ************** Interfaces ***********
+interface Point{
+    x:number,
+    y:number
+}
 
+let drawpoint = (point:Point) =>{
+    // stuff
+}
+drawpoint({
+    x:1,
+    y:2
+})
+
+// ************** Objects and Cohesion ***********
+
+interface Point{
+    x:number,
+    y:number
+}
+
+let drawpoint = (point:Point) =>{
+    // stuff
+}
+// we may use the point object again
+let getDistance = (pointA: Point, pointB:Point)=>{
+
+}
+drawpoint({
+    x:1,
+    y:2
+})
